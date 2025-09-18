@@ -8,12 +8,62 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Espaço de pergunta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <RadioGroup
+        android:id="@+id/rbg_principal"
+        android:layout_width="406dp"
+        android:layout_height="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.367">
+
+        <RadioButton
+            android:id="@+id/rb_a"
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:text="Resposta 1" />
+
+        <RadioButton
+            android:id="@+id/rb_b"
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:text="Resposta 2" />
+
+        <RadioButton
+            android:id="@+id/rb_c"
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:text="Resposta 3" />
+
+        <RadioButton
+            android:id="@+id/rb_d"
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:text="Resposta 4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_responder"
+        android:layout_width="252dp"
+        android:layout_height="54dp"
+        android:text="Responder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
